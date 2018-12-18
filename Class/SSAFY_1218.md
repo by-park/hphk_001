@@ -2,17 +2,15 @@
 
 #### SSAFY 2주차 2018-12-18
 
+###### [1]  사용툴
 
-
-1. 사용툴
-
-   파이썬 챗봇
+파이썬 챗봇
 
 
 
-2. 작성 코드
+###### [2] 작성 코드
 
-오늘의 로또 번호를 지난 로또 당첨 번호와 비교하기
+1. 오늘의 로또 번호를 지난 로또 당첨 번호와 비교하기
 
 ```python
 import requests
@@ -47,7 +45,7 @@ print("지난주 번호와 비교했을 때 {}개가 일치합니다.".format(co
 
 
 
-네이버 웹툰 타이틀과 주소 크롤링해오기
+2. 네이버 웹툰 타이틀과 주소 크롤링해오기
 
 ```python
 import requests
@@ -81,4 +79,28 @@ print(toons)
 ```
 
 
+
+3. 다음 웹툰 타이틀과 주소 크롤링 해오기
+
+```python
+import requests
+import time
+import json
+from bs4 import BeautifulSoup as bs
+
+# 1. 내가 원하는 정보를 얻을 수 있는 주소를 url 이라고 하는 변수에 담는다.
+url = "http://webtoon.daum.net/data/pc/webtoon/list_serialized/mon?timeStamp=1545118505793"
+# 2. 해당 url에 요청을 보내 응답을 받아 저장한다.
+response = requests.get(url).text
+# 3. 구글 신에게 python으로 어떻게 json을 파싱(딕셔너리 형으로 변환) 하는지 물어본다.
+# 4. 파싱한다. (변환한다)
+document = json.loads(response)
+# 5. 내가 원하는 데이터를 꺼내서 조합한다.
+data = document["data"]
+
+for toon in data:
+  print(toon["title"])
+  print(toon["pcThumbnailImage"]["url"])
+  print("http://webtoon.daum.net/webtoon/view/{}".format(toon["nickname"]))
+```
 
