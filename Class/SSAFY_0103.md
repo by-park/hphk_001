@@ -4,7 +4,7 @@
 
 외부 컴퓨터와  홈 컴퓨터에서 동시에 작업을 할 때는, 반드시 pull 로 동기화를 해야한다. 
 
-<img src="https://github.com/BY1994/hphk_001/tree/master/Images/image001.png">
+<img src="https://github.com/BY1994/hphk_001/blob/master/Images/image001.png?raw=true">
 
 처음에 이미 있는 내용을 받을 때는 git clone을 활용한다.
 
@@ -27,7 +27,7 @@ $ git clone 깃헙 주소
 
 Github branch는 원래 작업하는 기준 선인 master말고, 가상 환경처럼 가지를 뻗어나온 것이다. 가상 환경처럼 따로 테스트를 해본 후에 괜찮으면 그때서야 정식 코드로, master 로 넣어주는 것이다.
 
-<img src="https://github.com/BY1994/hphk_001/tree/master/Images/image002.png">
+<img src="https://github.com/BY1994/hphk_001/blob/master/Images/image002.png?raw=true">
 
 - `git branch`: 현재 있는 branch 목록을 확인할 수 있다.
 
