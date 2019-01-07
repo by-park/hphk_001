@@ -1,6 +1,6 @@
 # main
 
-본 github는 SSAFY 1기 교육 과정 내용을 정리한 것입니다.
+본 github는 hphk 교육 과정 내용을 정리한 것입니다.
 
 
 

@@ -1,6 +1,6 @@
 # 텔레그램 봇 만들기
 
-##### SSAFY 2주차 2018-12-20
+##### 2주차 2018-12-20
 
 - 핸드폰으로 Telegram에 가입한다.
 - Telegram Web에서 로그인한다. [Telegram](https://web.telegram.org/)

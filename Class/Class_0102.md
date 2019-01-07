@@ -1,6 +1,6 @@
 # Jupyter notebook 설치
 
-#### SSAFY 2019-01-02
+#### 2019-01-02
 
 - pip --version을 확인한다.
 
@@ -24,7 +24,7 @@ alias jn="jupyter notebook"
 
 # swexpertacademy 문제 풀기
 
-#### SSAFY 2019-01-02
+#### 2019-01-02
 
 - code - problem - difficulty level 1을 누르고 두 번째 페이지에 있는 대각선 출력하기 문제를 선택한다.
 - 언어를 pypy 5.9로 선택한 다음 원하는 코드를 써서 제출을 누른다.
@@ -33,7 +33,7 @@ alias jn="jupyter notebook"
 
 # 백준 Online Judge 문제 풀기
 
-#### SSAFY 2019-01-02
+#### 2019-01-02
 
 - 문제 - 단계별로 풀어보기 - 입/출력 받아보기 - Hello World 문제를 풀어본다.
 - `print("Hello World!")`를 쓰고 제출한다.

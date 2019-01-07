@@ -1,4 +1,4 @@
-# SSAFY Start Camp  챗봇 퀘스트
+# Start Camp  챗봇 퀘스트
 
 서울_2 박보윤, https://github.com/BY1994/hphk_001/
 

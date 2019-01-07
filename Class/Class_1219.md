@@ -1,6 +1,6 @@
 # Github 페이지 구축
 
-##### SSAFY 2 주차 2018-12-19
+##### 2 주차 2018-12-19
 
 - Github에서 새 Repository를 만들고 아이디.github.io를 이름으로 설정한다.
 - free Bootstrap templates을 다운받고 그것을 내가 원하는 폴더에 압축 푼 내용 전체를 복사해둔다. [템플릿 다운받기](https://startbootstrap.com/template-categories/all/)
@@ -12,7 +12,7 @@
 
 # Cloud9 서버 환경 구축
 
-##### SSAFY 2주차 2018-12-19
+##### 2주차 2018-12-19
 
 - 초대장을 받아 가입하지 않으면 유료로 서버를 만들어야 한다.
 - 새  workspace 만들기: project name, public, blank template 선택
@@ -48,7 +48,7 @@ $ pip install flask
 
 # FLASK를 이용한 서버 만들기
 
-##### SSAFY 2주차 2018-12-19
+##### 2주차 2018-12-19
 
 - app.py 파일에 다음과 같이 작성한다.
 
