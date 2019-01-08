@@ -48,7 +48,7 @@ name = "철수"
 
 String, List, Tuple, Range, Set, Dictionary
 
-> 이 중에 인덱스로 변경이 불가능한 것은 String, Tuple, Range, Set이다.
+> 이 중에 인덱스로 변경이 불가능한 것은 String, Tuple, Range이다.
 >
-> Dictionary는 key값을 통해 변경 가능하다.
+> Dictionary는 key값을 통해 변경 가능하다. Set은 요소를 추가하거나 뺄 수 있다.
 
