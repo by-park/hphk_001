@@ -12,3 +12,19 @@ def palindrome(word):
 		print(False)
 ```
 
+
+
+선생님 답
+
+```python
+def is_palindrome(word):
+    list_word = list(word)
+    for i in range(len(list_word)//2):
+        if list_word[i] != list_word[-i-1]: # i=0, 0과-1비교, i=1, 1과-2비교
+            return False
+    return True
+
+print(is_palindrome('level'))
+print(is_palindrome('apple'))
+```
+
