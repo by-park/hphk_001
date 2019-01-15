@@ -39,3 +39,18 @@ class Circle:
 18.84
 ```
 
+
+
+선생님 답
+
+x, y, z에 각각 값을 넣었다.
+
+```python
+c1 = Circle()
+c1.area()
+c1.circumference()
+```
+
+
+
+혹은 move를 사용해도 될 것...

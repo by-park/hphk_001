@@ -14,11 +14,15 @@
 
 (2) 클래스는 선언과 동시에 *클래스* 객체가 생성되며, 인스턴스 객체를 만들면 클래스에서 선언된 메서드를 활용할 수 있다. (o)
 
-(3) instance(인스턴스 객체, 클래스 객체)를 활용하면 상속 관계까지 확인 가능하다. (o)
+(3) isinstance(인스턴스 객체, 클래스 객체)를 활용하면 상속 관계까지 확인 가능하다. (o)
 
 (4) 생성자는 인스턴스 객체가 생성될 때 자동으로 호출된다. (o)
 
-(5) 숫자 5는 그냥 숫자일 뿐 클래스가 없다. (x)
+(5) 숫자 5는 그냥 숫자일 뿐 클래스가 없다. (x) 
+
+> 5라는 숫자도 클래스이다. dir(5) 해보면 실제 쓸 수 있는 imag, real 등이 보인다. __ge__연산자 오버로딩도 보인다.
+>
+> isinstance(인스턴스, 부모 클래스) 도 확인 가능하다!
 
 
 
@@ -34,11 +38,11 @@ greeting이 호출되면, 아래와 같이 문자열을 반환한다.
 
 ```python
 class Person:
-	def __init__(self, name, age):
+	def __init__(self, name, age=0):
 		self.name = name
 		self.age = age
 	def greeting(self):
-		print(f'안녕하세요. {self.name}입니다. {self.age}살입니다.')
+		return f'안녕하세요. {self.name}입니다. {self.age}살입니다.'
 ```
 
 
