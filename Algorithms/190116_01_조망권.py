@@ -87,4 +87,45 @@ for i in range(10):
             g += B[j] - sorted(B[j-2:j+3])[-2]
     print('#{0} {1}'.format(i+1, g))
 
+# 코드 리뷰 - 강민수님 코드
+for _ in range(10):
+    t = int(range())
+    l = list(map(int, input().split()))
+    c = 0
+    i = 2
+    while i < t-2:
+        max_ = sorted(l[i-2:i] + l[i+1:i+3])[-1]
+        if l[i] > max_:
+            c += l[i] - max_
+            i += 3
+        else:
+            i += 1
+    print(f'#{_+1} {c}')
+
+# 선생님 코드 리뷰
+def getMax(idx):
+    tmax = heights[idx-2] # 처음 거는 걔가 맥스입니다.
+
+    if tmax < heights[idx - 1]: tmax = heights[idx - 1] # 새로들어온 놈이 크면 맥스값 갱신
+    if tmax < heights[idx + 1]: tmax = heights[idx + 1]
+    if tmax < heights[idx + 2]: tmax = heights[idx + 2]
+
+    return tmax
+
+TC = 10
+for tc in range(1, TC+1):
+
+    N = int(input())
+    heights = list(map(int, input().split()))
+    view = 0 # 지금은 명확하지만 프로그램이 복잡해지면
+    # init이라는 함수를 둬서 초기화를 해서 혹시나 이런 애들이
+    # for문 위에 있지 않게 만든다.
+
+    for i in range(2, N-2):
+        side = getMax(i)
+        if side < heights[i]: # Max보다 내가 더 크면
+            view += heights[i] - side # 조망권이 확보된 것이므로 추가
+    print("#%d %d" % (tc, view))
+
+
 # visual studio는 실행시 ctrl + f5
