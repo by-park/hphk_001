@@ -24,4 +24,24 @@
 
 4. 아래 이미지와 같은 로그인 화면을 생성하는 html 코드를 작성하시오.
 
-???????
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        ID: <input type="text" value="user" />
+    </div>
+    <div>
+    PWD: <input type="text" value="****" />
+    <button type="submit">로그인</button>
+    </div>
+</body>
+</html>
+```
+

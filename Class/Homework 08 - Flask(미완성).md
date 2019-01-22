@@ -2,7 +2,7 @@
 
 1. Web에서의 커뮤니케이션 방식은 (a)와 (b)로 이루어져있다. 브라우저의 주소창에 주소를 입력하는 것으로 (a)를 보내며, 그에 대한 (b)로 HTML, XML, JSON등의 문서를 보내준다. 각각 (a)와 (b)에 들어갈 말을 작성하시오.
 
-> (a) get? query? header? 
+> (a) request
 >
 > (b) response
 
