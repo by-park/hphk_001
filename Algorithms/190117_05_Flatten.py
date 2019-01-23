@@ -50,6 +50,27 @@ for i in range(1, 11):
     minindex = blocks.index(min(blocks))    
     print("#{} {}".format(i, blocks[maxindex] - blocks[minindex]))
 
+# 한동훈님 코드 일부
+for test in range(testcase):
+    n = int(input())
+    li = list(map(int, input().split()))
+    N = 0
+    while N!=n:
+        N+=1
+        li[li.index(my_max[li])] = my_max(li) -1
+        li[li.index(my_min[li])] = my_min(li) +1
+    print(f'#{test+1} {my_max(li) - my_min(li)}')
+
+# 선생님 코드
+    for i in range(dump_cnt):
+        maxI, minI = find_minmax()
+        box_height[maxI] -= 1
+        box_height[minI] += 1
+
+    # 덤프 끝난 후에 바로 차이를 빼면 테스트 케이스 중 반만 맞는다.
+    maxI, minI = find_minmax()
+
+    print("#%d" % tc, box_heights[maxI] - box_heights[minI])
 # 1차 시도 실패 이유
 # 마지막에 min +1이 되었기 때문에 더이상 아까의 min이 최솟값이 아닐 수 있다.
 # max도 마찬가지 그래서 마지막에 한 번 더 찾아줘야 한다.

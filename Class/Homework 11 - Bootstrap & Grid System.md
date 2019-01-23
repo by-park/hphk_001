@@ -6,7 +6,9 @@
 
 > Button, btn btn-danger를 주면 된다.
 
-2. 다음 만들기
+2. 다음은 부트스트랩의 어떤 component이며, 아래와 동일하게 만들어 보시오.
+
+> alert component이다.
 
 ```html
 <div class="alert alert-primary text-success" role="alert">
@@ -24,7 +26,7 @@
 
 
 
-4. 문제?
+4. 아래와 같은 분할을 grid system을 활용하여 만들어보시오.
 
 ```html
 <head>

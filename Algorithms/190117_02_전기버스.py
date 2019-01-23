@@ -50,10 +50,50 @@ for i in range(TC):
         else:
             cur_index -= 1 
 
-        
+# 혜희님 풀이 일부
+# 뒤에서부터 찾아서 최소의 탐색을 추구        
+    for compare in range(len(chargestop)-1, -1, -1):
+        if chargestop[compare] - chargestop[compare-1] <= K and start + K < N:
+            for bs in range(len(chargestop)-1, -1,-1):
+                if start+K>= chargestop[bs]:
+                    start = chargestop[bs]
+                    start += 1
+                    break
+
+# 선생님 코드
+T = int(input())
+# 충전소 n+1개 넣으려고 +1해줌
+for tc in range(1, T+1):
+    K, N, M = map(int, input().split())
+    charging_station = 
+    station[charging_station[i]] = 1
+
+    # 지금 0번째 위치
+    cnt = cur = 0
+    while(True):
+        # 자기 자리 왔는지 확인하기 위해 저장
+        pre=cur
+        cur += K
+        # 도착점에 왔으면 빠져 나오겠다.
+        if cur >= N:
+            break
+        # 거기 스테이션이 있냐 아니면 while 돌아가서 똑같은 일 반복
+        if stations[cur] == 1:
+            cnt += 1
+        # 충전소가 없으면 뒤로 돈다.
+        else:
+            for i in range(1, K+1):
+                # 하나빼서 충전소가 있으면 그 위치를 잡는다.
+                if stations[cur-i] == 1:
+                    cur -= 1
+                    cnt += 1
+                    break
+            # 갈 수 없는 상황이면 break를 걸고 나오겠다.
+            if cur == pre:
+                cnt = 0
+                break
+    print("#%d" % tc, cnt)
     
-
-
 # visual studio는 실행시 ctrl + f5
 
 # 1차 시도

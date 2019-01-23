@@ -57,7 +57,25 @@ for i in range(TC):
             min_ = hap
     
     print("#{} {}".format(i+1, max_-min_))
+
+# 선생님 코드
+TC = int(input())
+for tc in range(1, TC+1):
     
+    # 초기화
+    minv = maxv = sum
+    # 5-3 = 2 0, 1, 2 까지만 간다
+    for i in range(i, N-M+1):
+        # sum값 초기화
+        sum = 0
+        # 구간합
+        for j in range(i, i + M):
+            sum += v[j]
+    if maxv < sum : maxv = sum
+    if minv > sum: minv = sum
+print("#%d %d" % (tc, maxv - minv))
+
+
 # 짝수와 홀수를 이해 못해서....
 # 이렇게 코드가 길어졌다....
 

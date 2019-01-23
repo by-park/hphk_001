@@ -34,3 +34,23 @@ for i in range(TC):
     print('#{} {}'.format(i, S[-1] - S[0]))        
 
 # visual studio는 실행시 ctrl + f5
+
+# 선생님 코드
+# 선형 자료구조이고 개수가 들어온다.
+def find(a, n):
+    # 이 문제는 value가 중요하기 때문에 index 사용하는 대신 value를 직접 받아가면서 했다.
+    max_value = a[0]
+    min_value = a[0]
+    
+    # 하나씩 추가하면서 비교하겠다. 어차피 끝까지 가니까 max, min을 동시에 비교해도 된다.
+    for i in range(1, n):
+        
+        # max값보다 더 크면 max값을 갱신
+        if a[i] > max_value:
+            max_value = a[i]
+        # 반대 개념도 min값보다 작으면 min값을 갱신
+        if a[i] < min_value:
+            min_value = a[i]
+        
+    # 그 차이를 반환하면 답
+    return max_value - min_value

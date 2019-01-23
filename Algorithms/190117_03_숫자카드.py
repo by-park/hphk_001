@@ -42,6 +42,26 @@ for i in range(TC):
             max_ = [idx, a]
     print("#{} {} {}".format(i+1, max_[0], max_[1])) 
 
+# 선생님 코드
+T = int(input())
+for tc in range(T):
+    N = int(input())
+    # 11개 글자를 문자열로 받았다.
+    cards = input()
+    cnt = [0]*10
+
+    # 문자로 받은 애를 인덱스로 접근해서 카운팅을 체크하겠다.
+    for i in range(N):
+        cnt[int(cards[i])] += 1
+
+    # max index를 최초의 위치로 잡는다.
+    maxI = 0
+    for i in range(10):
+        if cnt[maxI] <= cnt[i]:
+            maxI = i
+    
+    print("#%d %d %d" %(tc, maxI, cnt[maxI]))
+
 # 1차 시도
 # array의 크기를 0~9로 10개로 잡아야하는데, 잘못 생각해서 N개로 잡아버렸다.
 
