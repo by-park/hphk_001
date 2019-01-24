@@ -49,6 +49,51 @@ for item in newa:
             x -= 1
 print(result)
 
+
+# 선생님 코드
+sorted_ary = [[0]*5 for _ in range(5)]
+
+def sel_min(): # select min
+    minX, minY = 0, 0
+    for i in range(5):
+        for j in range(5):
+            # 2차 배열을 다 돌면서 min 인덱스를 찾는다.
+            if ary[minX][minY] > ary[i][j]:
+                minX, minY = i, j
+    # 주어진 매트릭스에서 가장 작은 값을 반환
+    min = ary[minX][minY]
+    # 25번 부를 때, 한 번 찾았다는 정보는 처리를 해야 한다.
+    ary[minX][minY] = 99
+    return min
+
+def isWall(x, y): # 벽인지 확인
+    if x<0 or x>=5: return True
+    if y<0 or y>=5: return True
+    if sorted_ary[x][y] != 0: return True
+    return False
+
+X, Y = 0, 0 # 달팽이 최초 시작점
+dx = [0, 1, 0, -1]
+dy = [1, 0, -1, 0]
+dir_stat = 0 # 벡터 중에 어떤 것을 취할 것인지. 최초 디렉션은 0방향
+
+for i in range(25):
+    cur_min = sel_min() # 처음에 부르면 전체 min 값은 1이 나온다. (함수 안에서 99로 표시됨)
+    sorted_ary[X][Y] = cur_min
+    X += dx[dir_stat] # x, y 에서 x,y + (0,1)을 하면 옆의 좌표로 간다.
+    Y += dy[dir_stat] # 크기 1만큼 한 방향으로 가는 벡터가 되는 것이다.
+
+    if isWall(X,Y): # 벽에 닿으면, 벗어났으면 어떻게 할지 로직
+        X -= dx[dir_stat]
+        Y -= dy[dir_stat]
+        dir_stat = (dir_stat + 1) % 4 # 0, 1, 2, 3 뺑글뺑글 돌게 모듈라 연산
+        X = X + dx[dir_stat]
+        Y = Y + dy[dir_stat]
+
+for i in range(5):
+    for j in range(5):
+        print(sorted_ary[i][j], end=" ")
+    print()
 # 아래 코드는 17부터 못 돌아간다.
 # result[0][:] = newa[0:5]
 # x, y = 1, 4
