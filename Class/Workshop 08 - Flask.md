@@ -13,8 +13,12 @@ from flask import Flask
 app = Flask(__name__)
 
 dictionary = {'apple':'사과'}
-@app.route("/")
-def dictionary():
-    return html 파일
+
+@app.route("/hello/<name>")
+def hello(name):
+    if name in dictionary.keys():
+	    return str(name)+"은(는) "+str(dictionary[name]) + "!"
+    else:
+        return str(name)+"은(는) 나만의 단어장에 없는 단어입니다!"
 ```
 
