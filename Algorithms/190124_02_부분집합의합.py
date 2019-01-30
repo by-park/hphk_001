@@ -43,5 +43,19 @@ for tc in range(testcase):
 
     print("#%d %d" % (tc+1, ans))
 
+# 선생님 코드
+TC = int(input())
+for tc in range(1, TC+1):
+    N, K = map(int, input().split())
+    cnt = 0
+    for i in range(1, 1<<12):
+        bitCnt = sum = 0
+        for j in range(12):
+            if i & (1<<j):
+                sum += (j+1) # j+1 은 1부터 12가 된다.
+                bitCnt += 1 # 어떤 놈이 선택이 되면 선택 되었다고 표시
+        if sum == K and bitCnt == N: #합이 K, 선택된 원소 개수가 N개면
+            cnt += 1 # 카운팅 추가
+
 # pycharm은 실행시 alt+shift+f10 (이전 파일 또 실행 shift+f10)
 # visual studio는 실행시 ctrl + f5

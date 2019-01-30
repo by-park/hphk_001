@@ -52,5 +52,30 @@ for tc in range(testcase):
 # 10 개 중 9개 맞음 - max, min 업데이트가 두 번 일어나면서 자리 바뀜 현상
 # - 해결 완료
 
+# 선생님 코드
+# 10 1 9 2 8 3 7 4 6 5
+# 정렬 시킨 후에 앞에서 하나 뒤에서 하나 꺼냄
+
+TC = int(input())
+
+for tc in range(1, TC + 1):
+    N = int(input())
+    nums = list(map(int, input().split()))
+
+    for i in range(10):
+        minI = maxI = i
+        if i % 2 == 0:
+            for j in range(i + 1, N):
+                if nums[maxI] < nums[j] : maxI = j
+            nums[i], nums[maxI] = nums[maxI], nums[i]
+        else:
+            for j in range(i + 1, N):
+                if nums[minI] > nums[j] : minI = j
+            nums[i], nums[minI] = nums[minI], nums[i]
+
+    print("#%d"%tc, end=' ')
+    for i in range(10) : print(nums[i], end=' ')
+    print()
+
 # pycharm은 실행시 alt+shift+f10 (이전 파일 또 실행 shift+f10)
 # visual studio는 실행시 ctrl + f5

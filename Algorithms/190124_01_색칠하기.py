@@ -49,5 +49,24 @@ for tc in range(testcase):
                 count += 1
     print("#%d %d" % (tc+1, count))
 
+# 선생님 코드
+TC = int(input())
+for tc in range(1, TC+1):
+    N = int(input())
+    m = [[0]*10 for i in range(10)]
+    cnt = 0
+
+    for _ in range(0, N):
+        r1, c1, r2, c2, color = map(int, input().split())
+        for i in range(r1, r2+1):
+            for j in range(c1, c2+1):
+                m[i][j] += color
+
+    for i in range(10):
+        for j in range(10):
+            if m[i][j] == 3:
+                cnt += 1
+
+    print("#%d %d" %(tc, cnt))
 # pycharm은 실행시 alt+shift+f10 (이전 파일 또 실행 shift+f10)
 # visual studio는 실행시 ctrl + f5
