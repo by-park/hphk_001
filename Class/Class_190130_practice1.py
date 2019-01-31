@@ -29,3 +29,20 @@ else:
     print(-1)
 
 
+# 선생님 코드
+def BruteFore(t,p):
+    i=j=0
+    N = len(t)
+    M = len(p)
+    while j < M and i < N:
+        if t[i] != p[j]:
+            i = i-j #j는 맨 앞으로 # i는 중간에 멈춤
+            j = -1
+        i += 1
+        j += 1
+    if j == M: return i-M
+    else: return i # 못찾았다 대신 본문의 길이 리턴
+
+T = "abdvdfdfd"
+P ="dddd"
+print(T[BrueteForce(T,P):])
