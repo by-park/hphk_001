@@ -31,7 +31,7 @@ sys.stdin = open("C:/Users/student/Documents/week2/day1/Algorithms/190226_05_inp
 
 for tc in range(10):
     # input
-    length, start = list(map(int, input()))
+    length, start = list(map(int, input().split()))
     fromto = list(map(int, input().split()))
     array = [[0 for j in range(100)] for i in range(100)]
     for i in range(0, length, 2):
@@ -40,12 +40,45 @@ for tc in range(10):
     # BFS
     # 큐를 두 개 사용
     Q1 = [0] * 100
-    front1 = -1; rear1 = -1
+    front1 = -1; rear1 = 0
     Q2 = [0] * 100
-    front2 = -1; rear2 = -1
+    front2 = 0; rear2 = 0
+
+    # start
+    front1 += 1; rear1 += 1
+    Q1[front1] = start
 
     # 제일 위 큐에 넣고
+
     # 거기서 다음 자식을 탐색
+    while True:
+        check = 0 # 초기화
+
+        # 자식이 있는가
+        for node in Q1[front1:rear1+1]:
+            front1 += 1 # 찾을 때마다 큐에서 빼낸다.
+            for j in range(len(array)):
+                if array[node-1][j] == 1:
+                    rear2 += 1
+                    Q2[rear2] = j+1
+                    check = 1
+
+        # 자식이 없다면
+        if check == 0:
+            print(max(Q2[front2:rear2+1]))
+            break
+
+        # 방금 찾은 것은 뺀다.
+        front1 += 1
+        # 없으면 Q2에 잇는 걸 Q1으로 옮기고 다시 자식 찾기로 돌아감
+        for node in Q2[front2:rear2+1]:
+            front2 += 1
+            rear1 += 1
+            Q1[rear1] = node
+
+        # 자식 찾았으면
+        # 이 자식들이 큐....
+
     # 자식을 찾아서 다음 자식이 존재하는 대로 모두 다 찾아서 q2에 넣는다.
     # 없으면 종료 자식이 없으면 거기가 끝
     # 그거를 다 위의 큐에 넣고
