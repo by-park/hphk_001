@@ -23,6 +23,7 @@
 #부호와 함께 테스트 케이스의 번호를 출력하고, 공백 문자 후 테스트 케이스에 대한 답을 출력한다.
 
 최초 작성 2019.02.25 PBY
+최종 제출 2019.02.26
 """
 
 # 제출 시 삭제할 부분
@@ -30,57 +31,70 @@ import sys
 sys.stdin = open("C:/Users/student/Documents/week2/day1/Algorithms/190226_05_input.txt", "r")
 
 for tc in range(10):
+
     # input
     length, start = list(map(int, input().split()))
     fromto = list(map(int, input().split()))
     array = [[0 for j in range(100)] for i in range(100)]
-    for i in range(0, length, 2):
-        array[fromto[i]][fromto[i+1]] = 1
+    for i in range(1, length, 2):
+        array[fromto[i-1]-1][fromto[i]-1] = 1
 
-    # BFS
-    # 큐를 두 개 사용
+    # 양방향 연락이 가능하기 때문에 visited가 필요하다. (이것을 append로 구현하면 훨씬 속도가 빨라진다)
+    visited = [0] * 100
+
+    # BFS 구현을 위한 큐를 두 개 사용하였다. (이전 레벨에 연락이 간 것, 다음 레벨에 연락을 돌릴 곳)
     Q1 = [0] * 100
-    front1 = -1; rear1 = 0
+    front1 = 0; rear1 = 0
     Q2 = [0] * 100
-    front2 = 0; rear2 = 0
+    front2 = 0; rear2 = -1
 
-    # start
-    front1 += 1; rear1 += 1
-    Q1[front1] = start
+    # start 지점을 먼저 큐에 넣고 시작한다.
+    Q1[rear1] = start
 
-    # 제일 위 큐에 넣고
-
-    # 거기서 다음 자식을 탐색
+    # 최대한 연락이 닿을 때까지 while문을 돌린다. (다음 자식 노드가 아예 없을 때까지)
     while True:
-        check = 0 # 초기화
 
-        # 자식이 있는가
+        # 자식이 존재하는지 확인하기 위해 초기화를 매번 해줬다.
+        check = 0
+
+        # Q1에 존재하는 부모 노드의 개수를 알기 위해 따로 변수를 사용했다.
+        nodenum = 0
+
+        # Q1을 탐색하면서
         for node in Q1[front1:rear1+1]:
-            front1 += 1 # 찾을 때마다 큐에서 빼낸다.
+            nodenum += 1 # 부모 노드의 개수 확인하고
+
+            # 연락망을 확인하면서
             for j in range(len(array)):
-                if array[node-1][j] == 1:
+
+                # 아직 연락이 안 갔으면 연락을 돌린다.
+                if array[node-1][j] == 1 and not visited[j]:
                     rear2 += 1
                     Q2[rear2] = j+1
+                    visited[j] = 1
+
+                    # 자식이 존재함을 체크
                     check = 1
 
-        # 자식이 없다면
+        # 더 이상 연락을 돌릴 수 없다면 (자식노드가 없다면)
         if check == 0:
-            print(max(Q2[front2:rear2+1]))
+
+            # max값 찾는 연산
+            maxvalue = Q1[front1]
+            for findmax in Q1[front1:rear1+1]:
+                if findmax > maxvalue:
+                    maxvalue = findmax
+
+            # 정답을 출력 후 while문 종료
+            print("#{} {}".format(tc+1, maxvalue))
             break
 
-        # 방금 찾은 것은 뺀다.
-        front1 += 1
-        # 없으면 Q2에 잇는 걸 Q1으로 옮기고 다시 자식 찾기로 돌아감
+        # Q1에서 탐색이 끝난 부모 노드의 개수를 모두 빼낸다.
+        front1 += nodenum
+
+        # 탐색이 종료되었으니 Q2에 있는 것이 다시 Q1으로 업데이트 된다.
         for node in Q2[front2:rear2+1]:
-            front2 += 1
-            rear1 += 1
+            front2 += 1 # Q2에서 꺼내면서
+            rear1 += 1 # Q1에 추가
             Q1[rear1] = node
-
-        # 자식 찾았으면
-        # 이 자식들이 큐....
-
-    # 자식을 찾아서 다음 자식이 존재하는 대로 모두 다 찾아서 q2에 넣는다.
-    # 없으면 종료 자식이 없으면 거기가 끝
-    # 그거를 다 위의 큐에 넣고
-    # 지금 거에서 하나 내려감?
 
