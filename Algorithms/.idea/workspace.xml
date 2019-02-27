@@ -5,7 +5,14 @@
     <bookmark url="file://$PROJECT_DIR$/190226_02_미로의거리.py" line="94" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56c8cfef-563d-45c8-b4e0-5c4f410d38db" name="Default Changelist" comment="" />
+    <list default="true" id="56c8cfef-563d-45c8-b4e0-5c4f410d38db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/190227_01_숫자배열회전.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190228_01_숫자추가.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190228_02_수열합치기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190228_03_암호.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190228_04_수열.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,87 +22,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/190226_05_Contact.py">
+        <entry file="file://$PROJECT_DIR$/190227_01_숫자배열회전.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190226_01_회전.py">
+        <entry file="file://$PROJECT_DIR$/190228_02_수열합치기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="1173">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190226_02_미로의거리.py">
+        <entry file="file://$USER_HOME$/Downloads/output (4).txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190226_03_피자 굽기.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190226_04_노드의거리.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/sample_input (1).txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/sample_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190226_05_input.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190221_03_토너먼트카드게임.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190221_04_배열최소합.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="414">
+              <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -128,12 +76,17 @@
         <option value="$PROJECT_DIR$/190226_03_피자 굽기.py" />
         <option value="$PROJECT_DIR$/190226_04_노드의거리.py" />
         <option value="$PROJECT_DIR$/190226_05_Contact.py" />
+        <option value="$PROJECT_DIR$/190228_01_숫자추가.py" />
+        <option value="$PROJECT_DIR$/190228_03_암호.py" />
+        <option value="$PROJECT_DIR$/190228_02_수열합치기.py" />
+        <option value="$PROJECT_DIR$/190228_04_수열.py" />
+        <option value="$PROJECT_DIR$/190227_01_숫자배열회전.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="30" />
+    <option name="x" value="558" />
+    <option name="y" value="46" />
     <option name="width" value="1278" />
     <option name="height" value="929" />
   </component>
@@ -178,8 +131,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.190226_05_Contact">
-    <configuration name="190226_01_회전" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.190227_01_숫자배열회전">
+    <configuration name="190227_01_숫자배열회전" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190226_01_회전.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190227_01_숫자배열회전.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="190226_02_미로의거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="190228_01_숫자추가" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,7 +165,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190226_02_미로의거리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190228_01_숫자추가.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,7 +174,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="190226_03_피자 굽기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="190228_02_수열합치기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -233,7 +186,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190226_03_피자 굽기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190228_02_수열합치기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="190226_04_노드의거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="190228_03_암호" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,7 +207,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190226_04_노드의거리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190228_03_암호.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +216,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="190226_05_Contact" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="190228_04_수열" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,7 +228,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190226_05_Contact.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190228_04_수열.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -286,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.190226_05_Contact" />
-        <item itemvalue="Python.190226_02_미로의거리" />
-        <item itemvalue="Python.190226_01_회전" />
-        <item itemvalue="Python.190226_03_피자 굽기" />
-        <item itemvalue="Python.190226_04_노드의거리" />
+        <item itemvalue="Python.190227_01_숫자배열회전" />
+        <item itemvalue="Python.190228_04_수열" />
+        <item itemvalue="Python.190228_02_수열합치기" />
+        <item itemvalue="Python.190228_03_암호" />
+        <item itemvalue="Python.190228_01_숫자추가" />
       </list>
     </recent_temporary>
   </component>
@@ -308,14 +261,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="30" width="1278" height="929" extended-state="0" />
+    <frame x="558" y="46" width="1278" height="929" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16612904" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2981132" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29685536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37824476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,6 +357,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/190226_05_Contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190226_01_회전.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190226_02_미로의거리.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190226_03_피자 굽기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/sample_input (1).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/sample_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/190226_05_input.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -421,52 +416,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/sample_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/sample_input (1).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190226_02_미로의거리.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190226_03_피자 굽기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190226_01_회전.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190226_04_노드의거리.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="475">
           <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190226_05_Contact.py">
+    <entry file="file://$USER_HOME$/Downloads/output (4).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/output (5).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190228_01_숫자추가.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190228_03_암호.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190228_04_수열.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190228_02_수열합치기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190227_01_숫자배열회전.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
