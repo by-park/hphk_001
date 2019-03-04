@@ -9,8 +9,6 @@
 트리는 완전 이진 트리 형식으로 주어지며, 노드당 하나의 알파벳만 저장할 수 있다.
 노드가 주어지는 순서는 아래 그림과 같은 숫자 번호대로 주어진다.
 
-
-
 [입력]
 각 테스트 케이스의 첫 줄에는 각 케이스의 트리가 갖는 정점의 총 수 N(1≤N≤100)이 주어진다. 그 다음 N줄에 걸쳐 각각의 정점 정보가 주어진다.
 해당 정점에 대한 정보는 해당 정점의 알파벳, 해당 정점의 왼쪽 자식, 오른쪽 자식의 정점번호가 차례대로 주어진다.
@@ -26,55 +24,40 @@
 """
 
 import sys
+sys.stdin = open('C:/Users/student/Documents/week2/day1/Algorithms/190304_01_input.txt', 'r')
 
-sys.stdin = open('C:/Users/student/Documents/week2/day1/Algorithms/190228_05_input.txt', 'r')
+# 중위 순회
+def inorder(start):
+    if start:
+        inorder(int(binary_tree[start][1]))
+        print(binary_tree[start][0], end='')
+        inorder(int(binary_tree[start][2]))
 
-T = int(input())
-for tc in range(T):
-    sdoku = [[] for __ in range(9)]
-    for row in range(9):
-        sdoku[row] = input().split()
+for tc in range(10):
 
-    # 가로줄 & 세로줄 검사
-    for i in range(9):
-        hori_numbers = []; verti_numbers = []
-        for j in range(9):
-            if sdoku[i][j] not in hori_numbers:
-                hori_numbers.append(sdoku[i][j])
-                ans = 1
-            else:
-                ans = 0
-                break
+    # 정점의 수가 주어진다.
+    nodes = int(input())
 
-            if sdoku[j][i] not in verti_numbers:
-                verti_numbers.append(sdoku[j][i])
-                ans = 1
+    # 이진 트리 만들기
+    binary_tree = [0 for __ in range(nodes+1)]
 
-            else:
-                ans = 0
-                break
-        if ans == 0:
-            break
+    # 이진 트리 채우기
+    for n in range(nodes):
+        cur_input = input().split()
+        binary_tree[int(cur_input[0])] = cur_input[1:] + ['0'] * (4 - len(cur_input))
 
-    if ans == 1:
-        # 3x3 검사
-        for i in range(0, 9, 3):  # 가로 시작점
-            for j in range(0, 9, 3):  # 세로 시작점
-                numbers = []
-                # 3칸 3칸 돌면서
-                for k in range(0, 3):
-                    for l in range(0, 3):
-                        if sdoku[i + k][j + l] not in numbers:
-                            numbers.append(sdoku[i + k][j + l])
-                            ans = 1
-                        else:
-                            ans = 0
-                            break
-                    if ans == 0:
-                        break
-                if ans == 0:
-                    break
-            if ans == 0:
-                break
+    # 결과 출력
+    print("#%d " %(tc+1), end = '')
+    inorder(1) # 시작은 1번
+    print() # 출력 사이 엔터
 
-    print("#%d %d" %(tc+1, ans))
+
+"""
+이진트리 채우기 이전 버전 코드
+        # if len(cur_input) == 3:
+        #     binary_tree[int(cur_input[0])] = cur_input[1:] + ['0']
+        # elif len(cur_input) == 2:
+        #     binary_tree[int(cur_input[0])] = [cur_input[1], '0', '0']
+        # else:
+        #     binary_tree[int(cur_input[0])] = cur_input[1:] # 어차피 조회를 목적으로 한 순회라서 주소값이 와도 상관 없음
+"""
