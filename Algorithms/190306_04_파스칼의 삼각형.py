@@ -1,3 +1,9 @@
+"""
+파스칼의 삼각형
+
+2019.03.06 PBY 최초작성
+"""
+
 T = int(input())
 for tc in range(T):
     N = int(input())
