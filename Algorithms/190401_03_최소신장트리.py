@@ -30,6 +30,62 @@
 2019.04.01 PBY 최초작성
 """
 
+from collections import deque
+T = int(input())
+for tc in range(1, T+1):
+    V, E = map(int, input().split())
+    V += 1
+    ad = [[0 for _ in range(V)] for __ in range(V)]
+    for _ in range(E):
+        s, e, w = map(int, input().split())
+        ad[s][e] = w
+        ad[e][s] = w
+    # 시작점에 연결된 노드 찾기
+    visited = [False] * V
+    start = 0
+    visited[start] = True # 시작점 간선은 찾을 거니까
+    minvalue = 10
+    q = deque([start])
+    for i in range(V):
+        if 0< ad[start][i] <= minvalue:
+            minvalue = ad[start][i]
+            minidx = i
+    # 찾은 최소 간선을 가지고 연결
+    ans = minvalue # 최소 비용들은 ans에 저장해나간다.
+    visited[minidx] = True
+    q.append(minidx)
+    remain = V-2 # 2개 정점 제외한 나머지 정점 개수
+    numv = 2
+    while remain > 0: # 모든게 연결되는 순간 while문 탈출
+        minvalue = 10 # 최소값 업데이트 위치 때문에 한참 틀림 ㅠㅠㅠㅠ!!! 지금 연결될 수 있는 모든 간선들 중에서 최소를 찾아야한다. 한 정점의 간선만 보는게 아니라 연결된 정점들의 간선은 싹 다
+        for i in range(numv):# q에 들어있는 개수를 돌면서 거기서 최종 min값을 찾아야한다.
+            vertex = q.popleft() # 맨 처음에 있는 걸 꺼내서
+            numv -= 1 # 하나 꺼냈으니까 큐에 있는 vertex 개수는 1개
+            # 꺼낸 것과 연결된 것 중 visited안 된 거를 찾아야한다.
+            check = 0
+            for j in range(V):
+                if not visited[j] and 0< ad[vertex][j]:
+                    check = 1 # 간선이 있긴 있다고 체크 => 최소 비용 간선이 아니면 간선을 못 찾은 것처럼 취급해서 틀린듯하다
+                    if ad[vertex][j] <=minvalue: # 최소 비용 간선 찾기
+                        minvalue = ad[vertex][j]
+                        minidx = j
+            # 최소를 찾았으면 q에 다시 넣고 (연결된 간선이 아예 없는 게 아니니까), 최소도 q에 넣어줌. 나와 같이 뻗어나갈 친구
+            if check == 1:
+                q.append(vertex) # 정점이 있으면 다시 큐에 넣어줌
+                numv += 1
+        # for문을 돌고 나왔을 때 최종 min값이 큐에 연결되도록 해준다.
+        q.append(minidx)
+        numv += 1
+
+        # 새 정점 추가
+        visited[minidx] = True
+        remain -= 1
+        ans += minvalue
+            
+    
+    print("#%d %d" %(tc, ans))
+
+
 # make set
 # 가중치 w에 의해 정렬
 # for로 가중치가 낮은 간선 들을 쭉 돌면서
@@ -77,7 +133,7 @@ for tc in range(1, T+1):
 """    
 
 # 예제 3개는 다 맞는데...반례를 못 찾겠다.
-
+"""
 T = int(input())
 for tc in range(1, T+1):
     V, E = map(int, input().split())
@@ -116,7 +172,7 @@ for tc in range(1, T+1):
                 ans += minvalue
                 #visited[mini] = True # 연결된 간선도 추가로 다시 나를 찾지 않게
     print("#%d %d" %(tc, ans))
-
+"""
 
 
 """
