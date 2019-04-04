@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56c8cfef-563d-45c8-b4e0-5c4f410d38db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/190403_01_최대상금.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/190403_02_수영장.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/190403_03_격자판의 숫자 이어 붙이기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/190403_04_숫자 만들기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/190404_01_홈 방범 서비스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190404_02_벌꿀채취.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190404_03_핀볼 게임.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/190404_04_점심 식사시간.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/190307_04_Ladder2.py" beforeDir="false" afterPath="$PROJECT_DIR$/190307_04_Ladder2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/190403_01_최대상금.py" beforeDir="false" afterPath="$PROJECT_DIR$/190403_01_최대상금.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Algorithms$190404_02_.coverage" NAME="190404_02_벌꿀채취 Coverage Results" MODIFIED="1554345008159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$190403_02_.coverage" NAME="190403_02_수영장 Coverage Results" MODIFIED="1554266632108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$190403_04__.coverage" NAME="190403_04_숫자 만들기 Coverage Results" MODIFIED="1554269233740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$1074_Z.coverage" NAME="1074_Z Coverage Results" MODIFIED="1554257669228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/TIL/Algorithm/Baekjoon" />
@@ -24,6 +23,7 @@
     <SUITE FILE_PATH="coverage/Algorithms$190402_01__.coverage" NAME="190402_01_최소 비용 Coverage Results" MODIFIED="1554180658757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$190402_03___.coverage" NAME="190402_03_상원이의 생일 파티 Coverage Results" MODIFIED="1554183618926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$190403_03____.coverage" NAME="190403_03_격자판의 숫자 이어 붙이기 Coverage Results" MODIFIED="1554271833994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorithms$190404_03__.coverage" NAME="190404_03_핀볼 게임 Coverage Results" MODIFIED="1554364535411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithms$190404_01___.coverage" NAME="190404_01_홈 방범 서비스 Coverage Results" MODIFIED="1554282095111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -31,35 +31,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190402_03_상원이의 생일 파티.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="460">
               <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190403_03_격자판의 숫자 이어 붙이기.py">
+        <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/2589_보물섬.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/190404_01_홈 방범 서비스.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="828">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#95#106#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190404_01_input.txt">
+        <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/1074_Z.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="141" column="39" lean-forward="true" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190404_02_벌꿀채취.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190404_03_핀볼 게임.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/190404_04_점심 식사시간.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190404_03_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-456">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -67,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190228_02_수열합치기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3762">
+            <state relative-caret-position="4554">
               <caret line="198" selection-start-line="198" selection-end-line="198" />
             </state>
           </provider>
@@ -81,11 +111,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>3</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -124,18 +149,22 @@
         <option value="$USER_HOME$/TIL/Algorithm/Baekjoon/1074_Z.py" />
         <option value="$PROJECT_DIR$/190403_02_수영장.py" />
         <option value="$PROJECT_DIR$/190403_04_숫자 만들기.py" />
-        <option value="$PROJECT_DIR$/190403_01_최대상금.py" />
         <option value="$PROJECT_DIR$/190403_03_격자판의 숫자 이어 붙이기.py" />
-        <option value="$PROJECT_DIR$/190404_01_input.txt" />
         <option value="$PROJECT_DIR$/190404_01_홈 방범 서비스.py" />
+        <option value="$PROJECT_DIR$/190404_02_input.txt" />
+        <option value="$PROJECT_DIR$/190404_02_벌꿀채취.py" />
+        <option value="$PROJECT_DIR$/190403_01_최대상금.py" />
+        <option value="$PROJECT_DIR$/190404_03_input.txt" />
+        <option value="$PROJECT_DIR$/190404_03_핀볼 게임.py" />
+        <option value="$PROJECT_DIR$/190404_04_점심 식사시간.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="60" />
-    <option name="y" value="30" />
-    <option name="width" value="1210" />
-    <option name="height" value="928" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="671" />
+    <option name="y" value="20" />
+    <option name="width" value="1270" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -159,8 +188,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/TIL/Algorithm/Baekjoon/2589_보물섬.py" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -180,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.190404_01_홈 방범 서비스">
+  <component name="RunManager" selected="Python.190404_03_핀볼 게임">
     <configuration name="190403_01_최대상금" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,28 +224,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190403_01_최대상금.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="190403_02_수영장" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190403_02_수영장.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,28 +254,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="190403_04_숫자 만들기" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190403_04_숫자 만들기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="190404_01_홈 방범 서비스" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,20 +276,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="190404_02_벌꿀채취" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190404_02_벌꿀채취.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="190404_03_핀볼 게임" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/190404_03_핀볼 게임.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.190403_01_최대상금" />
-      <item itemvalue="Python.190403_02_수영장" />
-      <item itemvalue="Python.190403_04_숫자 만들기" />
       <item itemvalue="Python.190403_03_격자판의 숫자 이어 붙이기" />
       <item itemvalue="Python.190404_01_홈 방범 서비스" />
+      <item itemvalue="Python.190404_02_벌꿀채취" />
+      <item itemvalue="Python.190404_03_핀볼 게임" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.190404_03_핀볼 게임" />
+        <item itemvalue="Python.190404_02_벌꿀채취" />
         <item itemvalue="Python.190404_01_홈 방범 서비스" />
         <item itemvalue="Python.190403_03_격자판의 숫자 이어 붙이기" />
         <item itemvalue="Python.190403_01_최대상금" />
-        <item itemvalue="Python.190403_04_숫자 만들기" />
-        <item itemvalue="Python.190403_02_수영장" />
       </list>
     </recent_temporary>
   </component>
@@ -320,23 +349,24 @@
       <updated>1550712530989</updated>
       <workItem from="1554180454496" duration="1646000" />
       <workItem from="1554250227105" duration="22085000" />
+      <workItem from="1554336678305" duration="25104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23731000" />
+    <option name="totallyTimeSpent" value="48835000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="24" width="968" height="742" extended-state="1" />
+    <frame x="671" y="20" width="1270" height="931" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18259935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945235" visible="true" weight="0.30541873" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2141844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945235" visible="true" weight="0.3605707" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3761349" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -368,28 +398,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/codecs.py" />
-    <entry file="file://$PROJECT_DIR$/190221_05_계산기3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190221_02_미로.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190221_01_Forth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="89" column="33" lean-forward="true" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190220_01_magnetic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -569,9 +577,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/output.txt" />
-    <entry file="file://$USER_HOME$/Downloads/input.txt" />
-    <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/2589_보물섬.py" />
+    <entry file="file://$USER_HOME$/Downloads/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/190403_04_숫자 만들기.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -593,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190403_01_최대상금.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/1074_Z.py" />
     <entry file="file://$PROJECT_DIR$/190403_01_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -610,36 +617,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/190402_03_상원이의 생일 파티.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="460">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190403_03_격자판의 숫자 이어 붙이기.py">
+    <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/2589_보물섬.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="828">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#95#106#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/190228_02_수열합치기.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3762">
+        <state relative-caret-position="4554">
           <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190404_01_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="141" column="39" lean-forward="true" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/190404_01_홈 방범 서비스.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190403_03_격자판의 숫자 이어 붙이기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/TIL/Algorithm/Baekjoon/1074_Z.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190404_02_벌꿀채취.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190404_02_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1579">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190403_01_최대상금.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190404_03_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190404_03_핀볼 게임.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190404_04_점심 식사시간.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
