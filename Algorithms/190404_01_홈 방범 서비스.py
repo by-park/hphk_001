@@ -42,10 +42,6 @@ for tc in range(1, T+1):
                 # 그 시작점이 있으면 마름모 크기만큼
                 home = 0
                 for row in range(size):
-                    # print(middle[0]-(size-1)//2+row)
-                    # print(town[middle[0]-(size-1)//2+row])
-                    # print(town[middle[0]-(size-1)//2 + row][middle[1]-(size-1)//2 + abs((size-1)//2-row) : middle[1]+(size-1)//2-abs((size-1)//2-row) + 1 ])
-
                     home += sum(town[middle[0]-(size-1)//2 + row][middle[1]-(size-1)//2 + abs((size-1)//2-row) : middle[1]+(size-1)//2-abs((size-1)//2-row) + 1 ])
                     # print(town[row][middle[1]-(k-1)//2:middle[1]+(k-1)//2])
                 # 지금 마름모에 들어있는 home이
