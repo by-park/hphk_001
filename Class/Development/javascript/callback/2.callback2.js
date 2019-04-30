@@ -9,7 +9,10 @@ const orderCoffee = (order, callback) => {
     // 1초가 걸림!!
     setTimeout(()=>{
         coffee = order // 다 만듬
-        callback(coffee)
+        // callback(coffee)
+        Serving(coffee, ()=>{
+            
+        })
     }, 1000); 
     return coffee
 }

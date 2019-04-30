@@ -64,7 +64,7 @@ orderCoffee('Americano') // Promise 에 Americano가 담긴다.
         console.log(coffee) // undefined
     })
 
-    
+
 /*
 const orderCoffee = (order) => {
     let coffee 
@@ -74,4 +74,29 @@ const orderCoffee = (order) => {
         coffee = order
     }, 1000);
 }
+*/
+
+const XHR = new XMLHttpRequest()
+const URL = 'http://koreanjson.com/posts/1'
+
+XHR.open('GET', URL)
+XHR.send()
+
+XHR.addEventListener('load', (event)=>{
+    const rawData = event.target.response
+    const parsedData = JSON.parse(rawData)
+    console.log(parsedData)
+})
+
+const URL = 'http://koreanjson.com/posts/1'
+
+fetch(URL)
+    .then((response) => response.json()) // 응답 결과를 object로 parsing
+    .then((object) => {
+        console.log(object)
+    })
+
+/*
+fetch(URL)
+    .then((response)=>console.log(response))
 */

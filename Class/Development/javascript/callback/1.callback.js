@@ -51,7 +51,7 @@ numbersEach(numbers, (number)=>{
     // console.log(`numbersEach `, number) // 4, 5, 6 출력이 되면 정상적인 것
 })
 
-
+let sum = 0
 // ES6 이후로 도입된 Array Helper Method
 numbers.forEach((number) => {
     sum += number

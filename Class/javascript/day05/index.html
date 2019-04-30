@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>이건 헤더</h1>
+    <p id="app">{{ msg }} - {{ count }}</p>
+    <button id="btn">버튼</button>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        let app = new Vue({
+            // 주어
+            el: '#app',
+            // 목적어
+            data: {
+                msg: 'Happy Hacking!',
+                count: 0,
+            },
+            // 동사
+            methods: {
+                plus: function (){
+                    this.count++ // this.count += 1이라고 해도 된다.
+                }
+            }
+
+            //directives:
+            //watch:
+            //computed:
+        })
+        app.plus()
+        
+    </script>
+</body>
+</html>
+
+
+
+<!-- // btn이 눌러졌을 때 (클릭됐을 때), p 태그 안에 "누르지마" 
+const btn = document.querySelector('#btn')
+btn.addEventListener('click', function(e){
+    const app = document.querySelector('#app')
+    app.innerHTML = '누르지마'
+}) -->

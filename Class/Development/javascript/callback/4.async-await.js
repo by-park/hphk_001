@@ -23,3 +23,14 @@ const getCoffee = async () => {
 }
 
 getCoffee()
+
+const getData = async () => {
+    try{
+        const URL = 'https://koreanjson.com/posts/1'
+        const response = await fetch(URL) // 데이터를 불러오겠다.
+        const data = await response.json() // 파싱하겠다.
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
