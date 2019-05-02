@@ -1,3 +1,12 @@
+# Javascript 7 & 8강 Vue js로 Todo 앱 만들기
+
+2019-05-02
+
+- localStorage 활용하기
+
+_todo.html_
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,3 +105,82 @@
     </script>
 </body>
 </html>
+```
+
+
+
+- radio 박스를 사용하여 원하는 이미지 출력하기
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+      img {
+        width: 100px;
+    </style>
+</head>
+<body>
+    <div id="main">
+        <input type="radio" id="dog" v-model="picked" value="야옹">
+        <label for="dog">댕댕이</label>
+        <br />
+        <input type="radio" id="cat" v-model="picked" value="때껄룩">
+        <label for="cat">고양이</label>
+        <br /> 
+        <span>{{ picked }}</span>
+        <br />
+        <img v-bind:src="image" />  
+    </div>
+    <script>
+        const dogAndCat = new Vue({
+            el:'#main',
+            data: {
+                picked: '',
+                image: '',
+            },
+            // data의 값을 보고 있다가 data의 값이 바뀌면 특정 함수를 실행
+            watch:{
+              // TODO: radio 버튼이 눌리면 해당 동물 이미지가 나오도록 하세요!
+              picked: function(newPicked){
+                if (newPicked==="야옹"){
+                  this.getDogImage()
+                } else {
+                  this.getCatImage()
+                }
+              }
+            },
+            methods: {
+                getDogImage: function(){
+                    const URL = 'https://dog.ceo/api/breeds/image/random'
+                    axios.get(URL)
+                        .then(response=>{
+                            const imageUrl = response.data.message
+                            console.log(imageUrl)
+                            this.image = imageUrl
+                          })
+                },
+                getCatImage: function(){
+                    const URL = 'https://api.thecatapi.com/v1/images/search'
+                    axios.get(URL)
+                        .then(response=>{
+                            const imageUrl = response.data[0].url
+                            console.log(imageUrl)
+                            this.image = imageUrl
+                            })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+```
+

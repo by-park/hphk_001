@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{ number }}</p>
+        <button @click="increase">UP</button>
+        <p>{{ increase2 }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    new Vue({
+        el: '#app',
+        data: {
+            number: 0
+        },
+        methods: {
+            increase: function() {
+                console.log('메소드 불렀음')
+                this.number++
+            }
+        },
+        computed: {
+            increase2: function() {
+                console.log('컴퓨티드 불렀음')
+                if (this.number > 10) {
+                    return '10보다 커요'
+                } else {
+                    return '10보다 작아요'
+                }
+            }
+        }
+    })
+    </script>
+</body>
+</html>
