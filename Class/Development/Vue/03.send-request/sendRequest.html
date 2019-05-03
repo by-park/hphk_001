@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+        <h3>Request</h3>
+        <input type="text" placeholder="Title" v-model="post.title">
+        <br />
+        <input type="text" placeholder="Author" v-model="post.author">
+        <br />
+        <textarea name="content" cols="30" rows="10" placeholder="Content" v-model="post.content"></textarea>
+        <br />
+        <button @click="sendRequest">Post</button>
+    </div>
+    <div>
+      <h3>Response</h3>
+      <pre>{{ response }}</pre>
+    </div>
+  </div>
+  <script>
+    /*
+      Vue request practice
+      1. data 안에 post 객체를 생성하고 property 로 title, author, content 를 html 로 부터 입력받는다.
+      2. button 에 클릭 이벤트가 발생하면 POST 방식으로 주어진 URL 에 post 객체를 담아서 요청을 보낸다.
+      3. 응답이 오면 data 의 response 에 응답받은 객체를 바인딩하고 `pre` 태그 안에서 보여준다.
+    */
+    const URL = 'https://jsonplaceholder.typicode.com/posts'
+    const app = new Vue({
+      el: '#app',
+      data: {
+        post: {
+          title: '',
+          author: '',
+          content: ''
+         },
+        response: '',
+      },
+      methods: {
+        sendRequest: function() {
+          axios.post(URL, this.post)
+          .then(response => {
+            // function(response) {} 으로 쓴다면
+            // 여기서 console.log(this) 하면 윈도우가 나온다!!
+            this.response = response.data
+            console.log(this.response)
+          })
+        }
+      }
+    })
+  </script>
+</body>
+</html>
