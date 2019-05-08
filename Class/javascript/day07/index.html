@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase TODO</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <input v-model="newTodo" @keyup.enter="addTodo">
+        </div>
+        <div>
+            <ul>
+                <li v-for="todo in current">{{ todo['.value'] }}</li>
+            </ul>            
+        </div>
+    </div>
+
+    <!-- Vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <!-- Firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    
+    <!-- Vue Fire -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuefire/1.4.5/vuefire.min.js"></script>
+    
+    <script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    const config = {
+        apiKey: "",
+        databaseURL: "https://<데이터베이스 주소>.firebaseio.com",
+        projectId: "<데이터베이스 주소>",
+    };
+    firebase.initializeApp(config);
+    const db = firebase.database()
+
+    const app = new Vue({
+        el: "#app", //내 앱의 마운트 포인트
+        data: {
+            newTodo: '',
+        },
+        methods: {
+            addTodo: function() {
+                // newTodo를 todos에 추가
+                // this.todos.push(this.newTodo) 를 데이터 베이스로 변경
+                this.$firebaseRefs.todos.push(this.newTodo)
+                this.newTodo = ''
+            }
+        },
+        firebase: {
+            todos: db.ref('todos') // 안에 들어간 건 테이블 네임 같은 거. todos라는 이름으로 저장하겠다는 것. 왼쪽은 우리가 접근해서 쓰는 이름이 된다.
+        },
+        computed: {
+            current: function() {
+                return this.todos
+            }
+        }
+    })
+    </script>
+</body>
+</html>
